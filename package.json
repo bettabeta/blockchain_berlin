@@ -2,24 +2,5 @@
   "name": "blockchainberlin",
   "version": "1.0.0",
   "description": "Personal static website for Blockchain Berlin",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
-  },
-  "dependencies": {
-    "next": "^15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "typescript": "^5",
-    "tailwindcss": "^4",
-    "@tailwindcss/postcss": "^4"
-  }
+  "private": true
 }

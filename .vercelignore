@@ -1,0 +1,7 @@
+src/
+next.config.js
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+public/
+
