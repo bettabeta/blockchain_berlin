@@ -310,21 +310,21 @@ main {
     max-width: var(--max-width-text);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: var(--text-primary);
 }
 
 .subtitle {
-    font-size: clamp(1.375rem, 2.75vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     color: var(--text-secondary);
     font-weight: 400;
-    line-height: var(--line-height-base);
+    line-height: 1.6;
     max-width: var(--max-width-text);
     margin: 0 auto;
-    letter-spacing: -0.011em;
+    letter-spacing: -0.009em;
 }
 
-/* Occasions Section */
+/* How I Work Section */
 .how-i-work {
     padding: var(--spacing-sm) 0;
     margin-bottom: var(--spacing-md);
@@ -332,29 +332,29 @@ main {
 }
 
 .how-i-work-content {
-    background-color: var(--bg-secondary);
-    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(6, 248, 137, 0.03) 0%, rgba(6, 248, 137, 0.01) 100%);
+    padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    text-align: center;
+    border: 1px solid rgba(6, 248, 137, 0.15);
+    text-align: left;
     max-width: var(--max-width-text);
     margin: 0 auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: all var(--transition-base);
 }
 
 .how-i-work-content:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--border-hover);
+    border-color: rgba(6, 248, 137, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .how-i-work h2 {
-    margin-bottom: var(--spacing-md);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    margin-bottom: var(--spacing-lg);
+    font-size: clamp(1.375rem, 2.5vw, 1.875rem);
     font-weight: 600;
     color: var(--text-primary);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
+    text-align: center;
 }
 
 .how-i-work-list {
@@ -363,24 +363,24 @@ main {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .how-i-work-list li {
     color: var(--text-secondary);
-    line-height: var(--line-height-base);
-    font-size: 1.125rem;
-    padding-left: 1.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding: 0;
     position: relative;
     text-align: left;
 }
 
-.how-i-work-list li::before {
-    content: '–';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
+.how-i-work-list li strong {
+    color: var(--text-primary);
     font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.0625rem;
 }
 
 .occasions {
@@ -390,29 +390,29 @@ main {
 }
 
 .occasions-content {
-    background-color: var(--bg-secondary);
-    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(6, 248, 137, 0.03) 0%, rgba(6, 248, 137, 0.01) 100%);
+    padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    text-align: center;
+    border: 1px solid rgba(6, 248, 137, 0.15);
+    text-align: left;
     max-width: var(--max-width-text);
     margin: 0 auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: all var(--transition-base);
 }
 
 .occasions-content:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--border-hover);
+    border-color: rgba(6, 248, 137, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .occasions h2 {
-    margin-bottom: var(--spacing-md);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    margin-bottom: var(--spacing-lg);
+    font-size: clamp(1.375rem, 2.5vw, 1.875rem);
     font-weight: 600;
     color: var(--text-primary);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
+    text-align: center;
 }
 
 .occasions-list {
@@ -421,23 +421,25 @@ main {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .occasions-list li {
     color: var(--text-secondary);
-    line-height: var(--line-height-base);
-    font-size: 1.125rem;
-    padding-left: 1.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding: 0;
     position: relative;
+    padding-left: 1.5rem;
 }
 
 .occasions-list li::before {
-    content: '–';
+    content: '→';
     position: absolute;
     left: 0;
     color: var(--accent);
     font-weight: 600;
+    font-size: 1.125rem;
 }
 
 /* Services Section */
@@ -686,7 +688,7 @@ main {
     transform: scale(1.2);
 }
 
-/* About Section */
+/* What I Care About Section */
 .what-i-care {
     padding: var(--spacing-sm) 0;
     margin-bottom: var(--spacing-md);
@@ -694,29 +696,29 @@ main {
 }
 
 .what-i-care-content {
-    background-color: var(--bg-secondary);
-    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(6, 248, 137, 0.03) 0%, rgba(6, 248, 137, 0.01) 100%);
+    padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    text-align: center;
+    border: 1px solid rgba(6, 248, 137, 0.15);
+    text-align: left;
     max-width: var(--max-width-text);
     margin: 0 auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: all var(--transition-base);
 }
 
 .what-i-care-content:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--border-hover);
+    border-color: rgba(6, 248, 137, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .what-i-care h2 {
-    margin-bottom: var(--spacing-md);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    margin-bottom: var(--spacing-lg);
+    font-size: clamp(1.375rem, 2.5vw, 1.875rem);
     font-weight: 600;
     color: var(--text-primary);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
+    text-align: center;
 }
 
 .what-i-care-list {
@@ -725,24 +727,26 @@ main {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .what-i-care-list li {
     color: var(--text-secondary);
-    line-height: var(--line-height-base);
-    font-size: 1.125rem;
-    padding-left: 1.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding: 0;
     position: relative;
     text-align: left;
+    padding-left: 1.5rem;
 }
 
 .what-i-care-list li::before {
-    content: '–';
+    content: '→';
     position: absolute;
     left: 0;
     color: var(--accent);
     font-weight: 600;
+    font-size: 1.125rem;
 }
 
 .about {
@@ -1125,14 +1129,18 @@ footer a:hover {
     .how-i-work-content,
     .what-i-care-content,
     .occasions-content {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
     }
     
     .how-i-work-list li,
     .what-i-care-list li,
     .occasions-list li {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+    
+    .how-i-work-list li strong {
         font-size: 1rem;
-        padding-left: 1.25rem;
     }
     
     .reference-card {
@@ -1186,7 +1194,7 @@ footer a:hover {
     }
     
     .subtitle {
-        font-size: clamp(1.125rem, 3vw, 1.375rem);
+        font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
     }
     
     .cta-button {
