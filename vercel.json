@@ -3,6 +3,26 @@
   "buildCommand": null,
   "outputDirectory": null,
   "installCommand": null,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.pandr.de" }],
+      "destination": "https://pandr.de/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "blockchainberlin.de" }],
+      "destination": "https://pandr.de/berlin-blockchain/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.blockchainberlin.de" }],
+      "destination": "https://pandr.de/berlin-blockchain/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/en",
@@ -11,6 +31,18 @@
     {
       "source": "/en/",
       "destination": "/en/index.html"
+    },
+    {
+      "source": "/berlin-blockchain",
+      "destination": "/berlin-blockchain/index.html"
+    },
+    {
+      "source": "/en/berlin-blockchain",
+      "destination": "/en/berlin-blockchain/index.html"
+    },
+    {
+      "source": "/en/berlin-blockchain/",
+      "destination": "/en/berlin-blockchain/index.html"
     }
   ],
   "headers": [
@@ -33,4 +65,3 @@
     }
   ]
 }
-

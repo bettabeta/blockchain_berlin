@@ -2,20 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://blockchainberlin.de/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://pandr.de/</loc>
+        <lastmod>2026-05-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="de" href="https://blockchainberlin.de/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://blockchainberlin.de/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://pandr.de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pandr.de/en/"/>
     </url>
     <url>
-        <loc>https://blockchainberlin.de/en/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://pandr.de/en/</loc>
+        <lastmod>2026-05-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="de" href="https://blockchainberlin.de/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://blockchainberlin.de/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://pandr.de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pandr.de/en/"/>
+    </url>
+    <url>
+        <loc>https://pandr.de/ai-licensing-scan.html</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://pandr.de/ai-licensing-scan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pandr.de/en/ai-licensing-scan.html"/>
+    </url>
+    <url>
+        <loc>https://pandr.de/en/ai-licensing-scan.html</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://pandr.de/berlin-blockchain/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://pandr.de/berlin-blockchain/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pandr.de/en/berlin-blockchain/"/>
+    </url>
+    <url>
+        <loc>https://pandr.de/en/berlin-blockchain/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
-
