@@ -207,6 +207,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     transition: opacity var(--transition-fast);
     outline: none;
     border: none;
@@ -226,6 +227,14 @@ nav {
     border: none;
 }
 
+.logo-mark {
+    height: 36px;
+    width: 36px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo-wordmark,
 .logo-img {
     height: 42px;
     width: auto;
