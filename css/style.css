@@ -2043,6 +2043,13 @@ button:focus,
     padding: 0.2rem 0.625rem;
 }
 
+.ref-credit {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin: var(--spacing-sm) 0 0;
+    line-height: 1.6;
+}
+
 .ref-card .card-link {
     display: inline-block;
     margin-top: var(--spacing-sm);
