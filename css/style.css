@@ -897,7 +897,7 @@ main {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     margin-top: var(--spacing-md);
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--border);
@@ -1321,6 +1321,10 @@ footer a:hover {
         align-items: stretch;
     }
 
+    .contact-buttons .cta-primary-wrap {
+        align-items: stretch;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
@@ -1338,7 +1342,7 @@ footer a:hover {
     flex-wrap: wrap;
     gap: 0.75rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: var(--spacing-md);
 }
 
@@ -1870,7 +1874,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.75rem;
     text-align: center;
     margin-top: var(--spacing-md);
@@ -1888,6 +1892,175 @@ button:focus,
 .cta-button:focus {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border);
+    margin-bottom: var(--spacing-sm);
+}
+
+.status-badge--beta {
+    color: #e8b84a;
+    border-color: rgba(232, 184, 74, 0.35);
+    background: rgba(232, 184, 74, 0.08);
+}
+
+.status-badge--referenz {
+    color: var(--accent);
+    border-color: rgba(6, 248, 137, 0.35);
+    background: var(--accent-light);
+}
+
+.status-badge--experiment {
+    color: #8eb4f0;
+    border-color: rgba(142, 180, 240, 0.35);
+    background: rgba(142, 180, 240, 0.08);
+}
+
+/* Beta notice section */
+.beta-notice {
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.beta-notice-inner {
+    background: rgba(232, 184, 74, 0.04);
+    border: 1px solid rgba(232, 184, 74, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    max-width: var(--max-width-text);
+    margin: 0 auto;
+    text-align: left;
+}
+
+.beta-notice h2 {
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.beta-notice-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.beta-notice-list li {
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.beta-notice-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #e8b84a;
+}
+
+.beta-notice-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: var(--spacing-md);
+    align-items: flex-start;
+}
+
+/* CTA with hint — hint sits below without shifting sibling buttons */
+.cta-primary-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.cta-primary-wrap .cta-button,
+.cta-primary-wrap .cta-button-secondary {
+    flex-shrink: 0;
+}
+
+.cta-hint {
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin: 0;
+    text-align: center;
+}
+
+.hero-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Reference cards */
+.clients-intro,
+.validierung-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: var(--max-width-text);
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.ref-logo {
+    height: 2rem;
+    width: auto;
+    max-width: 10rem;
+    margin-bottom: var(--spacing-sm);
+    object-fit: contain;
+}
+
+.ref-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+}
+
+.ref-tags li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    padding: 0.2rem 0.625rem;
+}
+
+.ref-card .card-link {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.ref-card .card-link:hover {
+    text-decoration: underline;
+}
+
+.validierung-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 /* Print Styles */

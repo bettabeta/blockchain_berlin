@@ -1,34 +1,37 @@
-# Blockchain Berlin
+# pandr.de — canonical site repo
 
-Personal static website built with Next.js.
+Static website for **PANDR** (Pandr UG). Local folder: `webseite` (GitHub: `blockchain_berlin`).
 
-## Setup
+**Live domains (Vercel):**
+- [pandr.de](https://pandr.de) — primary
+- [blockchainberlin.de](https://www.blockchainberlin.de) → redirects to `/berlin-blockchain/`
 
-```bash
-npm install
-```
+**GitHub:** [bettabeta/blockchain_berlin](https://github.com/bettabeta/blockchain_berlin)
 
-## Development
+> The former Next.js repo (`bettabeta/pandr`) is retired — not deployed. Do not use.
 
-```bash
-npm run dev
-```
+## Stack
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Static HTML/CSS/JS — no build step. Deployed as-is from repo root via Vercel (`vercel.json`).
 
-## Build Static Site
+## Local preview
 
 ```bash
-npm run build
+npx serve .
+# or
+python3 -m http.server 8765
 ```
 
-This will create a static export in the `out/` directory that can be deployed to any static hosting service.
+Open [http://localhost:8765](http://localhost:8765).
+
+## Structure
+
+- `index.html` — DE homepage (pandr.de)
+- `en/` — EN pages
+- `berlin-blockchain/` — blockchainberlin.de content
+- `css/`, `js/`, `assets/` — styles, scripts, images
+- `vercel.json` — domain redirects, rewrites, security headers
 
 ## Deploy
 
-The `out/` directory contains the static files that can be deployed to:
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
-
+Push to `main` → Vercel auto-deploys. Root directory is repo root; no build command.

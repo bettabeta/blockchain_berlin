@@ -93,12 +93,18 @@
 
     <main>
         <section class="hero" id="home">
+            <div class="hero-badge-row">
+                <span class="status-badge status-badge--beta">Early Access · Beta</span>
+            </div>
             <h1>AI Usage &amp; Rights Infrastructure für moderne Teams</h1>
             <p class="subtitle">PANDR hilft Unternehmen zu verstehen, zu dokumentieren und zu steuern, wie sie AI, Daten, Code und digitale Inhalte nutzen — von praktischen Rights Checks bis zu maschinenlesbarer Policy-Infrastruktur.</p>
             <div class="hero-ctas">
-                <a href="https://check.pandr.de" target="_blank" rel="noopener noreferrer" class="cta-button">Kostenloses Screening starten</a>
+                <div class="cta-primary-wrap">
+                    <a href="https://check.pandr.de?utm_source=pandr" target="_blank" rel="noopener noreferrer" class="cta-button">AI-Readiness-Check testen (Beta)</a>
+                    <p class="cta-hint">Kostenlos · Orientierung, keine Rechtsberatung</p>
+                </div>
+                <a href="/ai-licensing-scan.html" class="cta-button-secondary">AI-Nutzungs- und Rechte-Check</a>
                 <a href="https://calendly.com/proofmeta" target="_blank" rel="noopener noreferrer" class="cta-button-secondary">Beratung buchen</a>
-                <a href="#how-it-works" class="cta-button-secondary">So funktioniert es</a>
             </div>
         </section>
 
@@ -117,7 +123,7 @@
 
         <section class="services" id="offer">
             <h2>AI Usage &amp; Rights Analyzer</h2>
-            <p class="offer-intro">Ein pragmatischer Check für Teams, die AI-Tools, Kundendaten, interne Dokumente, generierte Inhalte, AI-Code, Datensätze, Prompts, Workflows oder externe Modelle nutzen.</p>
+            <p class="offer-intro">Ein pragmatischer Check für Teams, die AI-Tools, Kundendaten, interne Dokumente, generierte Inhalte, AI-Code, Datensätze, Prompts, Workflows oder externe Modelle nutzen. Der Beta-Check deckt eine Teilmenge ab; der Paid Check liefert die vollständige Karte.</p>
             <div class="analyzer-grid">
                 <article class="analyzer-card">
                     <h3>Tool-Inventar</h3>
@@ -153,9 +159,33 @@
                 </article>
             </div>
             <div class="offer-cta-row">
-                <a href="https://check.pandr.de" target="_blank" rel="noopener noreferrer" class="cta-button">Kostenloses Screening starten</a>
+                <div class="cta-primary-wrap">
+                    <a href="https://check.pandr.de?utm_source=pandr" target="_blank" rel="noopener noreferrer" class="cta-button">AI-Readiness-Check testen (Beta)</a>
+                    <p class="cta-hint">Kostenlos · Orientierung, keine Rechtsberatung</p>
+                </div>
                 <a href="/ai-licensing-scan.html" class="cta-button-secondary">Details zum AI-Nutzungs- und Rechte-Check</a>
                 <a href="https://calendly.com/proofmeta" target="_blank" rel="noopener noreferrer" class="cta-button-secondary">Beratung buchen</a>
+            </div>
+        </section>
+
+        <section class="beta-notice" id="beta">
+            <div class="beta-notice-inner">
+                <span class="status-badge status-badge--beta">Öffentliche Beta</span>
+                <h2>AI Readiness Check — Early Access</h2>
+                <p>Der AI Readiness Check ist in der <strong>öffentlichen Beta</strong>. Sie erhalten eine erste strukturierte Einordnung — kostenlos und ohne Verkaufsdruck.</p>
+                <ul class="beta-notice-list">
+                    <li><strong>Was die Beta ist:</strong> Self-Service-Ersteinschätzung zu AI-Nutzung, Daten und Policies (~3 Min.)</li>
+                    <li><strong>Was sie nicht ist:</strong> Kein AI-Act-Audit, keine Rechtsberatung, kein Ersatz für den <a href="/ai-licensing-scan.html">AI-Nutzungs- und Rechte-Check</a></li>
+                    <li><strong>Feedback:</strong> Am Ende des Checks können Sie optional Rückmeldung geben — das hilft uns, die Beta zu verbessern</li>
+                    <li><strong>Daten:</strong> Die Verarbeitung auf <a href="https://check.pandr.de" target="_blank" rel="noopener noreferrer">check.pandr.de</a> ist in unserer <a href="/datenschutz.html">Datenschutzerklärung</a> beschrieben</li>
+                </ul>
+                <p class="disclaimer" style="margin:0;">
+                    <strong>Hinweis:</strong> Ergebnisse sind Arbeitshilfe aus Produkt-, Daten- und Geschäftsperspektive — keine Rechtsberatung. Für verbindliche Entscheidungen, Kundenmaterial und Enterprise-Anfragen empfehlen wir den AI-Nutzungs- und Rechte-Check mit menschlicher Einordnung.
+                </p>
+                <div class="beta-notice-actions">
+                    <a href="https://check.pandr.de?utm_source=pandr" target="_blank" rel="noopener noreferrer" class="cta-button">Beta-Check starten</a>
+                    <a href="/ai-licensing-scan.html" class="cta-button-secondary">Paid Check ansehen</a>
+                </div>
             </div>
         </section>
 
@@ -164,8 +194,8 @@
             <ol class="steps-list">
                 <li><strong>Aktuelle AI-Nutzung erfassen.</strong> Tools, Teams und typische Workflows sichtbar machen.</li>
                 <li><strong>Tools, Datenquellen und Abläufe prüfen.</strong> Wo fließen welche Daten — und unter welchen Bedingungen?</li>
-                <li><strong>Risiken identifizieren.</strong> Rechtliche, operative und lizenzbezogene Schwachstellen einordnen.</li>
-                <li><strong>Policy und Risikobericht erstellen.</strong> Klare Regeln und eine verständliche Übersicht für Entscheider.</li>
+                <li><strong>Risiken identifizieren.</strong> Im Beta-Check automatisiert als Orientierung; im Paid Check mit menschlicher Einordnung (Human-in-the-Loop).</li>
+                <li><strong>Policy und Risikobericht erstellen.</strong> Klare Regeln und eine verständliche Übersicht für Entscheider — im Paid Service von PANDR erstellt, nicht nur generiert.</li>
                 <li><strong>Maschinenlesbare Rechte-Metadaten vorbereiten.</strong> Dort, wo sie langfristig Governance und Automatisierung unterstützen.</li>
             </ol>
         </section>
@@ -209,6 +239,45 @@
             </div>
         </section>
 
+        <section class="clients" id="arbeit">
+            <h2 style="text-align:center;">Arbeit &amp; Referenz</h2>
+            <p class="clients-intro">Ausgewählte Referenzarbeit — zeigt Methodik und Marktverständnis, nicht als PANDR-Produkt verkauft.</p>
+            <div class="clients-grid">
+                <article class="client-item ref-card">
+                    <img src="/assets/ref-minerva.svg" alt="Minerva" class="ref-logo" width="160" height="40">
+                    <span class="status-badge status-badge--referenz">Referenz</span>
+                    <h3>Minerva</h3>
+                    <ul class="ref-tags">
+                        <li>Trust Operator Model</li>
+                        <li>B2B-GTM Deutschland</li>
+                        <li>Regulatory AI</li>
+                        <li>Enterprise Sales</li>
+                    </ul>
+                    <p>Referenzprojekt an der Schnittstelle von Trust Operator Model, B2B-Vertrieb in Deutschland und regulatorischer AI-Einordnung im Unternehmenskontext — Produkt-, GTM- und Regulatory-Arbeit als Grundlage für PANDRs B2B-Readiness-Ansatz.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="references" id="validierung">
+            <h2 style="text-align:center;">In Validierung</h2>
+            <p class="validierung-intro">Experimente und Piloten — bewusst noch kein fertiges Produkt. Wir testen, wo AI sinnvoll ist und wo der Mensch bleiben muss.</p>
+            <div class="validierung-grid">
+                <article class="reference-card ref-card">
+                    <img src="/assets/ref-hauszertifikat.svg" alt="Hauszertifikat" class="ref-logo" width="200" height="40">
+                    <span class="status-badge status-badge--experiment">Experiment</span>
+                    <h3>Hauszertifikat</h3>
+                    <ul class="ref-tags">
+                        <li>PDF-Extraktion</li>
+                        <li>Scan-Dokumente</li>
+                        <li>Human-in-the-Loop</li>
+                        <li>Bauphysik</li>
+                    </ul>
+                    <p>Pilot zur Validierung: strukturierte Daten aus PDFs — auch gescannte Dokumente — heuristisch extrahieren, von Fachexperten (Bauphysik) prüfen lassen. Ziel: lernen, welche Schritte AI übernehmen kann und welche beim Menschen bleiben.</p>
+                    <a href="#contact" class="card-link">Pilot-Gespräch anfragen →</a>
+                </article>
+            </div>
+        </section>
+
         <section class="audience-section" id="audience">
             <h2 style="text-align:center;">Für wen</h2>
             <ul class="audience-list">
@@ -232,8 +301,15 @@
 
         <section class="cta-banner" id="cta">
             <h2>Machen Sie AI-Nutzung erklärbar, bevor sie zum Risiko wird.</h2>
-            <p>Ein kurzer AI-Nutzungs- und Rechte-Check schafft Klarheit über Tools, Daten, Rechte und nächste Schritte — ohne Rechtsfloskeln, mit Blick auf Ihr Geschäft.</p>
-            <a href="https://calendly.com/proofmeta" target="_blank" rel="noopener noreferrer" class="cta-button">AI-Nutzungs- und Rechte-Check buchen</a>
+            <p>Starten Sie mit dem kostenlosen Beta-Check — oder buchen Sie den AI-Nutzungs- und Rechte-Check, wenn Sie Tiefe, Kundenmaterial und menschliche Einordnung brauchen.</p>
+            <div class="hero-ctas">
+                <div class="cta-primary-wrap">
+                    <a href="https://check.pandr.de?utm_source=pandr" target="_blank" rel="noopener noreferrer" class="cta-button">AI-Readiness-Check testen (Beta)</a>
+                    <p class="cta-hint">Kostenlos · Orientierung, keine Rechtsberatung</p>
+                </div>
+                <a href="/ai-licensing-scan.html" class="cta-button-secondary">AI-Nutzungs- und Rechte-Check</a>
+                <a href="https://calendly.com/proofmeta" target="_blank" rel="noopener noreferrer" class="cta-button-secondary">Beratung buchen</a>
+            </div>
         </section>
 
         <section class="contact" id="contact">
