@@ -1,0 +1,16 @@
+{
+  "name": "pandr.de static site",
+  "ports": [
+    {
+      "name": "static preview",
+      "port": 8765
+    }
+  ],
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 8765 --bind 0.0.0.0",
+      "description": "Serves the static site (index.html, en/, berlin-blockchain/, css/, js/, assets/) at http://localhost:8765. No build step — files are served as-is, matching the Vercel deployment."
+    }
+  ]
+}
