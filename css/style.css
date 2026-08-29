@@ -2068,6 +2068,14 @@ button:focus,
     line-height: 1.6;
 }
 
+/* Quiet keyword line under capability cards */
+.card-sub {
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin: var(--spacing-sm) 0 0;
+    line-height: 1.6;
+}
+
 .ref-card .card-link {
     display: inline-block;
     margin-top: var(--spacing-sm);
