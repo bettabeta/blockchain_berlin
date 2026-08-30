@@ -5,6 +5,16 @@
   "installCommand": null,
   "redirects": [
     {
+      "source": "/ai-licensing-scan.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/ai-licensing-scan.html",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.pandr.de" }],
       "destination": "https://pandr.de/:path*",
